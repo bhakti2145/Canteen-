@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Feedback</h2>
+    <textarea id="feedback" placeholder="Write your feedback here..."></textarea>
+    <p>Rate Us:</p>
+    <div class="rating">
+        <span onclick="setRating(1)">⭐</span>
+        <span onclick="setRating(2)">⭐</span>
+        <span onclick="setRating(3)">⭐</span>
+        <span onclick="setRating(4)">⭐</span>
+        <span onclick="setRating(5)">⭐</span>
+    </div>
+    <p>Your Rating: <span id="selected-rating">0</span>/5</p>
+    <button onclick="submitFeedback()">Submit</button>
+
+    <!-- Include JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
